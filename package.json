@@ -2,7 +2,7 @@
   "name": "fima",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Kanmaty.github.io/tunisian-club-FIMA",
+  "homepage": "https://Kanmaty.github.io/FIMA",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
