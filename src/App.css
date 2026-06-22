@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* src/App.css の末尾に追加 */
+
+body {
+  background-color: #f4f7f6; /* 背景を少しグレーにしてカードを目立たせる */
+  margin: 0;
+}
+
+/* --- シーズン切り替えタブのリッチデザイン --- */
+
+.season-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+  perspective: 1000px; /* 立体感を出すための隠し味 */
+}
+
+.season-tabs button {
+  position: relative;
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* デフォルト状態：高級感のある白磁のような質感 */
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  color: #64748b;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.05),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* ホバー時：少し浮き上がるアニメーション */
+.season-tabs button:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: #009879;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* アクティブ（選択中）：鮮やかなグラデーションと発光感 */
+.season-tabs button.active {
+  background: linear-gradient(135deg, #00b894 0%, #009879 100%);
+  color: white;
+  box-shadow: 
+    0 10px 25px rgba(0, 152, 121, 0.4),
+    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* アクティブ時のホバー：さらに強く発光 */
+.season-tabs button.active:hover {
+  box-shadow: 0 12px 30px rgba(0, 152, 121, 0.5);
+  filter: brightness(1.1);
+}
+
+/* クリックした瞬間：押し込まれるような感触 */
+.season-tabs button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* テキストの強調（装飾的なドット） */
+.season-tabs button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #009879; /* ホバー時に緑色 */
+}
