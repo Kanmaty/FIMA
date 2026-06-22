@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import fimaMovie from "../movie/FIMA.mp4";
+// import fimaMovie from "../movie/FIMA.mp4";
 import sagasakiMovie from "../movie/sagasaki.mp4";
 
 const OpeningMovie = ({ onFinish }) => {
