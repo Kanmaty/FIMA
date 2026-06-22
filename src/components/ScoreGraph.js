@@ -20,6 +20,7 @@ const ScoreGraph = ({ season }) => {
           id: doc.id,
           name: doc.data().name,
         }));
+        console.log("Firestoreから取得したデータ:", playersData);
         setPlayers(playersData);
 
         // インデックスエラー回避のため gameDate のみで取得し、メモリ内でソート
