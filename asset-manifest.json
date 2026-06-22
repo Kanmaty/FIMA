@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/FIMA/static/css/main.331ffd8f.css",
-    "main.js": "/FIMA/static/js/main.43a3f6fa.js",
+    "main.js": "/FIMA/static/js/main.a9b52d7c.js",
     "static/js/453.3a745ac0.chunk.js": "/FIMA/static/js/453.3a745ac0.chunk.js",
     "static/media/sagasaki.mp4": "/FIMA/static/media/sagasaki.2dbde69607c505d9ffa4.mp4",
     "index.html": "/FIMA/index.html",
     "main.331ffd8f.css.map": "/FIMA/static/css/main.331ffd8f.css.map",
-    "main.43a3f6fa.js.map": "/FIMA/static/js/main.43a3f6fa.js.map",
+    "main.a9b52d7c.js.map": "/FIMA/static/js/main.a9b52d7c.js.map",
     "453.3a745ac0.chunk.js.map": "/FIMA/static/js/453.3a745ac0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.331ffd8f.css",
-    "static/js/main.43a3f6fa.js"
+    "static/js/main.a9b52d7c.js"
   ]
 }
